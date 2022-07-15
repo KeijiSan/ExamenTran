@@ -1,0 +1,450 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Felinos</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+</head>
+</ul>
+<body>
+  <header class="container-fluid bg-dark position-sticky top-0">
+    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Clima</a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">carritos</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-Api-tab" data-bs-toggle="pill" data-bs-target="#pills-Api"
+          type="button" role="tab" aria-controls="pills-Api" aria-selected="false">Gatitos</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-Registro-tab" data-bs-toggle="pill" data-bs-target="#pills-Registro"
+          type="button" role="tab" aria-controls="pills-Api" aria-selected="false">Registro</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-Login-tab" data-bs-toggle="pill" data-bs-target="#pills-Login"
+          type="button" role="tab" aria-controls="pills-Api" aria-selected="false">Login</a>
+      </li>
+    </ul>
+
+  </header>
+
+  <div class="alert container position-sticky top-0 alert-primary hide " role="alert">
+  Se ha añadadito al carro
+  </div>
+  <div class="alert container position-sticky top-0 alert-danger remove " role="alert">
+    producto removido
+  </div>
+
+  <div class="tab-content"id="pills-tabContent">
+    <div class="tab-pane container"id="pills-home"role="tabpanel"
+      aria-labelledby="pills-home-tab"><h2 class="h4 m-4 text-primary">Clima</h2>
+      <head>
+        <div id="m-booked-vertical-one-prime-56748"> <div class="weather-customize weather-booked-vertical-one-prime" style="width:160px;" >  <div class="booked-vertical-prime-in"> <div class="booked-vertical-prime"> <div class="bwop-city">Santiago de Chile</div> <div class="bwop-icon wm18 "></div> <div class="booked-bwop-today"> <div class="booked-bwop-today-temperature"> <div class="booked-wzs-bwop-val"> <div class="booked-bwop-number"><span class="plus">+</span>6</div> <div class="booked-bwop-dergee"> <div class="booked-wzs-bwop-dergee-val">&deg;</div> <div class="booked-wzs-bwop-dergee-name">C</div> </div> </div> </div> <div class="booked-bwop-today-extreme"> <div class="booked-bwop booked-pd-h"><span>Alta:</span><span class="plus">+</span>9</div> <div class="booked-bwop booked-pd-l"><span>Baja:</span><span class="plus">+</span>3</div> </div> </div> <div class="bwop-state"> Lluvioso </div> </div> </div> </div> </div><script type="text/javascript"> var css_file=document.createElement("link"); var widgetUrl = location.href; css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href",'https://s.bookcdn.com/css/w/booked-wzs-prime-vertical-one.css?v=0.0.1'); document.getElementsByTagName("head")[0].appendChild(css_file); function setWidgetData_56748(data) { if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = document.getElementById('m-booked-vertical-one-prime-56748'); if(objMainBlock !== null) { var copyBlock = document.getElementById('m-bookew-weather-copy-'+data.results[i].widget_type); objMainBlock.innerHTML = data.results[i].html_code; if(copyBlock !== null) objMainBlock.appendChild(copyBlock); } } } else { alert('data=undefined||data.results is empty'); } } var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=2114;type=7;scode=124;ltid=3458;domid=582;anc_id=52445;countday=undefined;cmetric=1;wlangID=4;color=137AE9;wwidth=160;header_color=ffffff;text_color=333333;link_color=08488D;border_form=1;footer_color=ffffff;footer_text_color=333333;transparent=0;v=0.0.1";widgetSrc += ';ref=' + widgetUrl;widgetSrc += ';rand_id=56748';var weatherBookedScript = document.createElement("script"); weatherBookedScript.setAttribute("type", "text/javascript"); weatherBookedScript.src = widgetSrc; document.body.appendChild(weatherBookedScript) </script><!-- weather widget end -->
+      </head>
+      <!-- weather widget start -->
+    </div>
+    
+    <div class="tab-pane fade show active container "id="pills-profile"role="tabpanel"
+    aria-labelledby="pills-profile-tab"><h2 class="h4 m-4 text-primary">Productos</h2> 
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        {% for foto in producto %}
+        <div class="cold-flex justify-content-center-mb-4">
+          <div class="card shadow mb-1 bg-dark rounded"style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">{{foto.nombre}}</h5>
+            <img src="{%static 'Imagenes/'%}{{foto.nombreImagen}}"class="card-img-top"alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">{{foto.descripcion}}</p>
+              <h5 class="text-primary">Precio:<span class="precio">{{foto.precio}}</span></h5>
+              <div class="d-grid gap-2">
+              <button class="btn btn-primary button">AñadiraCarrito</button>
+            </div>
+            </div>
+          </div>
+       </div>
+       {% endfor %}
+
+      </div>
+    </div>
+    <div class="tab-pane fade carritos"id="pills-contact"role="tabpanel"
+    aria-labelledby="pills-contact-tab">
+    
+    <br>
+    
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr class="text-primary">
+          <th scope="col">#</th>
+          <th scope="col">Productos</th>
+          <th scope="col">precio</th>
+          <th scope="col">Cantidad</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+    
+      </tbody>
+    </table>
+    <br><br>
+    <div class="row mx-4">
+      <div class="col">
+        <h3 class="itemCartTotal text-white">Total=0</h3>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <button class="btn btn-success">Comprar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--api -->
+  <div class="tab-content"id="pills-tabContent">
+    <div class="tab-pane container"id="pills-Api"role="tabpanel"
+    aria-labelledby="pills-Api-tab"><h2 class="h4 m-4 text-primary">Gatitos</h2>
+    <body>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"
+              integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $("#enviar").click(function () {
+              $.get("https://api.thecatapi.com/v1/images/search?limit=5&page=10&order=Desc",
+                  function (data) {
+                      $.each(data, function (i, item) {
+  
+                          $("#categorias").append("<tr><td>" +
+                              "</td><td><img class = img-size-api src='" + item.url + "'>" +
+                              "</tr>");
+                      });
+  
+                  });
+          });
+      })
+  </script>
+  <div class="container d-block m-top config-container marcos fondo_container px-4 py-3">
+              <div class="row col-sm-2">
+                  <button type="button" class="btn btn-primary w-100" id="enviar"> Traer Gatitos</button>
+                 
+              </div>
+              <div class="row">
+                  <table class="table" id="categorias">
+                      <thead>
+                          <tr>
+                              <th scope="col">imagen</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                  </table>
+              </div>
+  
+          </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  
+    <script src="{%static 'js/scripts.js'%}"></script>
+  </body>
+  </div>
+<!--api-->
+<!--Registro-->
+<link rel="stylesheet" href="../MascotasProducto/css/Estilo.css">
+  <div class="tab-content"id="pills-tabContent">
+    <div class="tab-pane container"id="pills-Registro"role="tabpanel"
+  aria-labelledby="pills-Registro-tab"><h2 class="h4 m-4 text-primary"></h2>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#error").hide();
+
+    $("#formulario").submit(function(){
+      var mensaje ="";
+
+      if($("#nombre").val().trim().length==0)
+      {
+        mensaje = "El nombre esta en blanco";
+      }
+
+      if($("#email").val().trim().length==0)
+      {
+        mensaje = "El email esta en blanco";
+      }
+
+      if($("#contraseña").val().trim().length==0)
+      {
+        mensaje = "La contraseña esta en blanco";
+      }
+
+      if (mensaje !="")
+      {
+        $("#error").html(mensaje);
+        $("#error").show();
+        event.preventDefault();
+      }
+    });
+
+  })
+
+  </script>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<header class="container-fluid bg-dark position-sticky top-0">
+  
+</header>
+<section class="vh-100" style="background-color: #696969;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registro</p>
+
+                <form id= "formulario" class="mx-1 mx-md-4">
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="nombre" class="form-control" name="nombre" />
+                      <label class="form-label" for="nombre">Nombre</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" id="email" class="form-control" name="email"/>
+                      <label class="form-label" for="email">Correo electronico</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="contraseña" class="form-control" />
+                      <label class="form-label" for="contraseña">Contraseña</label>
+                    </div>
+                  </div>
+
+                  <!--<div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="contraseña2" class="form-control" />
+                      <label class="form-label" for="contraseña2">Repetir contraseña</label>
+                    </div>
+                  </div> !!! descomentar luego!!!--> 
+                  
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <input type="submit" id="enviar" class="btn btn-primary btn-lg" value="Registrarse">
+                  </div>
+                  <div id="error" class="alert alert-danger" role="alert"></div>
+
+                </form>
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                <img src="{%static 'Imagenes/Captura-de-pantalla-2020-07-24-a-las-17.33.44.png'%}" class="img-fluid" alt="Sample image">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+
+<script src="{%static 'js/scripts.js'%}"></script>
+</body>
+
+
+</div>
+
+<!--Registro-->
+<!--Login-->
+<div class="tab-content"id="pills-tabContent">
+  <div class="tab-pane container"id="pills-Login"role="tabpanel"
+  aria-labelledby="pills-Login-tab"><h2 class="h4 m-4 text-primary"></h2>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#error").hide();
+
+    $("#formulario").submit(function(){
+      var mensaje ="";
+
+      if($("#nombre").val().trim().length==0)
+      {
+        mensaje = "El nombre esta en blanco";
+      }
+
+      if($("#email").val().trim().length==0)
+      {
+        mensaje = "El email esta en blanco";
+      }
+
+      if($("#contraseña").val().trim().length==0)
+      {
+        mensaje = "La contraseña esta en blanco";
+      }
+
+      if (mensaje !="")
+      {
+        $("#error").html(mensaje);
+        $("#error").show();
+        event.preventDefault();
+      }
+    });
+
+  })
+
+  </script>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<header class="container-fluid bg-dark position-sticky top-0">
+</header>
+<section class="vh-100" style="background-color: #696969;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
+
+                <form id= "formulario" class="mx-1 mx-md-4">
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" id="email" class="form-control" name="email"/>
+                      <label class="form-label" for="email">Correo electronico</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="contraseña" class="form-control" />
+                      <label class="form-label" for="contraseña">Contraseña</label>
+                    </div>
+                  </div>
+
+                  <!--<div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="contraseña2" class="form-control" />
+                      <label class="form-label" for="contraseña2">Repetir contraseña</label>
+                    </div>
+                  </div> !!! descomentar luego!!!--> 
+                  
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <input type="submit" id="enviar" class="btn btn-primary btn-lg" value="Logearse">
+                  </div>
+                  <div id="error" class="alert alert-danger" role="alert"></div>
+
+                </form>
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                <img src="{%static 'Imagenes/perro-feliz-2.jpg'%}" class="img-fluid" alt="Sample image">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+
+<script src="{%static 'js/scripts.js'%}"></script>
+</body>
+
+  
+   
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="{%static 'js/scripts.js'%}"></script>
+</body>
+</html>
